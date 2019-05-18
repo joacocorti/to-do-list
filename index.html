@@ -2,29 +2,36 @@
 
 <head>
   <title>ToDo List</title>
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <link rel="stylesheet" href="./styles.css">
   <script defer src="script.js"></script>
 </head>
 
   <body>
+ 
     <div class="overlay hidden"></div>
     <div class="message hidden">
       <h3></h3>
-      <button onclick="closePopUp()">Aceptar</button>
+      <button type="button" class="btn btn-outline-dark" onclick="closePopUp()">Aceptar</button>
     </div>
-    <label>Lista de tareas</label>
-    <ul id="list"></ul>
+    <div class="row"> 
+      <label><h2>Lista de tareas: </h2></label>
+      <ul id="list"></ul>
 
-    <input type="text" id="task-name" />
-    <select id="task-color">
-      <option value="red">Rojo</option>
-      <option value="green">Verde</option>
-      <option value="pink">Rosa</option>
-      <option value="yellow">Amarillo</option>
-    </select>
-    <br />
-    <button id="btn-add-task">Agregar tarea</button>
-    <button id="btn-pick-task">Escoger una</button>
+      <input type="text" id="task-name" class="form-control mb-1" />
+      <select id="task-color" class="btn-lg mb-1" >
+
+        <option value="red">Rojo</option>
+        <option value="green">Verde</option>
+        <option value="pink">Rosa</option>
+        <option value="yellow">Amarillo</option>
+      </select>
+      <br />
+      <button id="btn-add-task" class="btn btn-success btn-lg mb-1">Agregar tarea</button>
+      <button id="btn-pick-task" class="btn btn-primary btn-lg btn-block">Escoger una</button>
+    </div>  
   </body>
 
 </html>
