@@ -19,7 +19,7 @@ body {
     width: 100%;
     height: 100%;
     background: #f7f5f5;
-    opacity: 0.9;
+    opacity: 1;
     position: absolute;
 }
 .hidden {
